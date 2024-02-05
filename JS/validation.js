@@ -54,6 +54,7 @@ function validation() {
 if (!passRegx.test(pass.value)) {
     err4.innerText = "Weak Password";
     err4.style.color = "red";
+    alert("Minimum 8 characters, at least one uppercase, and one lower case, must contain at least one number ")
     return false;
 } else if (pass.value.length < 8) {
     err4.innerText = "Medium Password";
